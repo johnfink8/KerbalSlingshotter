@@ -141,7 +141,7 @@ namespace KerbalSlingshotter
             Orbit o = vessel.orbit;
             foreach (ManeuverNode node in vessel.patchedConicSolver.maneuverNodes)
             {
-                if (node != null && node.patch != null && node.patch.ContainsUT(DesiredTime))
+                if (node != null && node.nextPatch != null)
                 {
                     DrawPatchIcons(node.nextPatch);
                 }
